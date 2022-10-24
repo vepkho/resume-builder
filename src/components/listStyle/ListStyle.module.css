@@ -1,0 +1,21 @@
+.Container{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    margin: 4px;
+}
+
+.Badge{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #023642;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

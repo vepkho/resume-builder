@@ -1,0 +1,113 @@
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: #023642;
+}
+
+.Contact{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 120px;
+}
+
+.Container form label{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.Container form input{
+    height: 40px;
+    border: 1px solid #b3c5cb;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.Container form input:active, .Container form input:focus, .Container form input::after{
+    outline: 1px solid #92c1d1;
+}
+
+::placeholder{
+    font-size: 16px;
+    color: #b3c5cb;
+}
+
+.Person{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 456px;
+    border-bottom: 1px solid #b3c5cb;
+    padding: 16px 0;
+}
+
+.Person input{
+    width: 100%;
+}
+
+.Details{
+    margin-top: 8px;
+    width: max-content;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.Details input{
+    width: 100%;
+}
+
+.Controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Resume{
+    position: relative;
+    width: 40%;
+    background-color: white;
+    background-image: url(https://media.zippia.com/resume-examples/overnight-stock-associate-resume-11.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    filter: blur(7px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .Contact{
+        width: 65%;
+        padding: 0 40px;
+        transform: scale(0.9);
+    }
+    .Resume{
+        width: 35%;
+    }
+}
+
+@media only screen and (max-width: 766px) {
+    .Contact{
+        width: 460px;
+        padding: 0;
+        margin: 0 auto;
+        transform: scale(.8);
+    }
+    .Resume{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .Contact{
+        width: 100%;
+        padding:0;
+        margin: 0;
+        transform: scale(.7);
+    }
+}

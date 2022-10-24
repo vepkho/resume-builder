@@ -1,0 +1,137 @@
+.Container{
+    display: flex;
+}
+
+.Resume {
+    width: 40%;
+    max-height: 100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/5989925/pexels-photo-5989925.jpeg?auto=compress&cs=tinysrgb&w=1600);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 4px 24px;
+}
+
+.Logo{
+    width: max-content;
+    margin: 16px 0;
+    padding: 4px 8px;
+    border: 2px solid white;
+    font-size: x-large;
+}
+
+.Testimonial{
+    display: flex;
+    flex-direction: column;
+}
+
+.Objective{
+    font-size: 18px;
+    text-align: center;
+}
+
+.Companies{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.Companies img{
+    max-width: 64px;
+    height: auto;
+    filter: grayscale(100%);
+}
+
+.Intro{
+    width: 60%;
+    height: 100vh;
+    padding: 0 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    color: #023642;
+}
+
+.Intro li{
+    list-style-type:none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.Title{
+    max-width: 420px;
+    font-size: 36px;
+}
+
+
+.Action{
+    margin: 12px 0 0 0;
+    padding: 0 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    font-size: 18px;
+}
+
+.Button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 4px 6px 14px;
+    background-color: #3D50FF;
+    border: none;
+    border-radius: 4px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.Button:hover{
+    background-color: #D01075;
+}
+
+.Button p{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.Alert{
+    padding: 0 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Intro{
+        transform: scale(0.8);
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Resume{
+        display: none;
+    }
+    
+    .Intro {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .Intro{
+        width: 100%;
+        transform: scale(0.8);
+    }
+
+    .Action{
+        flex-direction: column;
+    }
+}

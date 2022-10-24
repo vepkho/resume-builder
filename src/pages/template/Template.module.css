@@ -1,0 +1,194 @@
+.Loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} 
+
+.Container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.Objective{
+    width: 65%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    padding-left: 160px;
+    color: #023642;
+}
+
+.Title{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.Description{
+    width: 360px;
+    margin: 0;
+}
+
+.Text{
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.Colors{
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+    max-width: max-content;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.Colors button{
+    width: 32px;
+    height: 32px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .4s ease-out;
+}
+
+.Colors button:hover{
+    transform: scale(1.05);
+}
+
+.Colors button:hover > .Button {
+    color: black;
+}
+
+.Alert{
+    color: #FF0000;
+    margin-top: 0;
+}
+
+.Button{
+    width: 346px;
+    height: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 6px 4px 6px 14px;
+    background-color: #3D50FF;
+    border: none;
+    border-radius: 4px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.Button:hover{
+    background-color: #D01075;
+}
+
+.Objective span{
+    font-weight: bold;
+}
+
+.Image{
+    width: 35%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://images.pexels.com/photos/261651/pexels-photo-261651.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+} 
+
+.CV{
+    position: absolute;
+    right: 16%;
+    transform:scale(0.8);
+    border: 2px solid black;
+}
+
+@media only screen and (max-width: 1440px) {
+    .Objective{
+        padding-left: 80px;
+    }
+
+    .CV{
+        right: 8%;
+        transform:scale(0.65);
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .Objective{
+        padding-left: 40px;
+    }
+
+    .Description{
+        width: 240px;
+        margin: 0;
+    }
+
+    .Button{
+        width: 234px;
+    }
+
+    .CV{
+        right: -2%;
+        transform:scale(0.6);
+    }
+
+    .Colors{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .Objective{
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    .Description{
+        width: 100%;
+    }
+
+    .Colors{
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .Button{
+        width: 346px;
+    }
+
+    .Image{
+        display: none;
+    }
+
+    .CV{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .Description{
+        width: 240px;
+        margin: 0;
+    }
+
+    .Button{
+        width: 234px;
+    }
+
+    .Colors{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
